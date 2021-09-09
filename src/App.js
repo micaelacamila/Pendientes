@@ -1,17 +1,16 @@
-const cantidad = document.querySelector("#cantidad-input");
-const precio = document.querySelector("#precio-input")
-const estado = document.querySelector("#estado-input")
-const form = document.querySelector("#totalizador-form");
-
-var impuesto = 0.0825; //california
+const nombre = document.querySelector("#Nombre-tarea");
+const categoria = document.querySelector("#categoria-input")
+const form = document.querySelector("#tareas-form");
 
 form.addEventListener("submit", event =>{
     event.preventDefault();
-    alert("Cantidad ingresada: "+ cantidad.value+ 
-    "\nPrecio del item: "+precio.value+
-    "\n Impuesto(predeterminado): "+impuesto*100+"%"+
-    "\n Estado ingresado: "+Impuesto.value);
-    var precioTotal = cantidad.value * precio.value;
+    alert("Registrando tarea "+nombre.value+ " "+ categoria.value);
+    /*alert("Tarea ingresada: "+ nombre.value+ 
+    "\nCategoría de la tarea: "+categoria.value);*/
+    
+    /*var precioTotal = cantidad.value * precio.value;
     var precioTotalConImpuesto = precioTotal + impuesto*precioTotal; 
     alert("Precio total: "+precioTotal+"\nPrecio total con impuesto: "+precioTotalConImpuesto);
+    document.write("Prueba");*/
+    
 })

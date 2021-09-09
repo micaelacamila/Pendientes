@@ -1,26 +1,20 @@
 <html>
   <body>
-    <h1>Bienvenido al Calculador</h1>
-    <form id="totalizador-form">
-      <label for='cantidad-input'>Cantidad de items:</label>
-      <input type='text' id="cantidad-input" /><br>
+    <h1>Bienvenido a la definición de Tareas</h1>
+    <form id="tareas-form">
+
+      <label for='Nombre-tarea'>Nombre de la tarea:</label>
+      <input type='text' id="Nombre-tarea" /><br>
       
-
-      <label for='precio-input'>Precio del item ingresado:</label>
-      <input type='text' id="precio-input" /><br>
-
-      <label for='estado-input'>Ingrese el estado al que pertenece:</label>
+      <label for='categoria-input'>Ingrese la categoría de la tarea:</label>
      
 
-      <select id = "Impuesto" name = "Impuesto" required>
+      <select id = "categoria-input" name = "categoria-input" required>
         <option value="0">Selecciona una opcion. </option>
-        <option value="UT">UT</option>
-        <option value="NV">NV</option>
-        <option value="TX">TX</option>
-        <option value="AL">AL</option>
-        <option value="CA">CA</option>
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
 
-      <input type='submit' id="totalizador" value="Totalizar"/>
+      <input type='submit' id="submit" value="Agregar"/>
       
       
     </form>
